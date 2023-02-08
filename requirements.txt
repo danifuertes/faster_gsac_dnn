@@ -2,7 +2,7 @@ matplotlib==3.5.2
 opencv-python==4.6.0.66
 Pillow==9.1.1
 tensorflow==2.9.1
+tensorflow-addons==0.18.0
 tqdm==4.64.0
 tf2onnx==1.12.0
 onnxruntime-gpu==1.12.1
-hungarian-loss==1.0.0

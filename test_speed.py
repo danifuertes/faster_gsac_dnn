@@ -2,8 +2,8 @@ import os
 import time
 import onnx
 import tf2onnx
-import numpy as np
 import onnxruntime
+import numpy as np
 from tqdm import tqdm
 DEVICE = "0"
 os.environ["CUDA_VISIBLE_DEVICES"] = DEVICE

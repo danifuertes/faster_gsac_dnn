@@ -3,7 +3,6 @@ import tensorflow as tf
 
 from nets.backbones import *
 from nets.gsac_dnn import create_gsac_dnn
-from nets.multiclass_head2 import create_multiclass_head, decode_xy
 
 
 def load_weights(model, path):

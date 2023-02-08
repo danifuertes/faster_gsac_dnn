@@ -8,7 +8,6 @@ import tensorflow as tf
 from utils.options import get_options
 from utils.data_utils import data_gen
 from utils.net_utils import create_model
-from nets.multiclass_head2 import DistanceLoss
 from utils.utils import HistoryCallback, print_opts, plot_hist, load_lines
 
 

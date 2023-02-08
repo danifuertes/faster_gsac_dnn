@@ -146,4 +146,4 @@ CUDA_VISIBLE_DEVICES=1 python ...  # 1 for the 2nd GPU
 
 ## Acknowledgements
 This repository is an adaptation of
-[danifuertes/gsac_dnn](https://github.com/danifuertes/gsac_dnn).
+[danifuertes/gsac_dnn](https://github.com/danifuertes/gsac_dnn). The ViT backbone
