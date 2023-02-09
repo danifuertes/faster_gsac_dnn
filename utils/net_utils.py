@@ -47,7 +47,7 @@ def create_model(opts, weights_path, test_mode=False):
     elif opts.backbone == 'vit_own':
         from nets.vit_backbone import vit
         inputs, feature_maps = vit(
-            image_size=opts.input_dim[:2],
+            image_size=(opts.input_dim[0], opts.input_dim[1]),
             patch_size=16,
             dropout=0.1,
             mlp_dim=3072,
