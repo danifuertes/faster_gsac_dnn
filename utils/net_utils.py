@@ -44,17 +44,6 @@ def create_model(opts, weights_path, test_mode=False):
     elif opts.backbone == 'resnetv2_own':
         depth = opts.rn_layers * 9 + 2  # Computed depth from supplied model parameter n
         feature_maps = resnet_v2(inputs, depth)
-    elif opts.backbone == 'vit_own':
-        from nets.vit_backbone import vit
-        inputs, feature_maps = vit(
-            image_size=(opts.input_dim[0], opts.input_dim[1]),
-            patch_size=16,
-            dropout=0.1,
-            mlp_dim=3072,
-            num_heads=12,
-            num_layers=12,
-            hidden_size=768
-        )
     else:
         feature_maps = keras_backbone(opts.backbone, inputs, opts.input_dim, opts.keras_weights)
 

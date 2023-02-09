@@ -39,16 +39,16 @@ def keras_backbone(backbone, inputs, input_shape, weights):
             input_shape=input_shape,
             pooling=None
         )
-    elif backbone == 'convnext':
-        x = keras.applications.convnext.ConvNeXtBase(
+    elif backbone == 'xception':
+        x = keras.applications.xception.Xception(
             include_top=False,
             weights=weights,  # weights='imagenet'
             input_tensor=inputs,
             input_shape=input_shape,
             pooling=None
         )
-    elif backbone == 'xception':
-        x = keras.applications.xception.Xception(
+    elif backbone == 'inception':
+        x = keras.applications.inception_v3.InceptionV3(
             include_top=False,
             weights=weights,  # weights='imagenet'
             input_tensor=inputs,
@@ -70,7 +70,7 @@ def keras_backbone(backbone, inputs, input_shape, weights):
             input_tensor=inputs,
             input_shape=input_shape,
             pooling=None
-        )  # TODO: put all networks
+        )
     else:
         assert False, "The backbone {} is not implemented".format(backbone)
 

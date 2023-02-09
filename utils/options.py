@@ -43,7 +43,7 @@ def get_options(args=None):
     # MODEL
     # Backbone
     parser.add_argument('--backbone', type=str, default='resnetv1_own', help="Backbone architecture. You can choose"
-                        "some from Keras Applications or custom backbones: resnetv1_own, resnetv2_own, vit_own")
+                        "some from Keras Applications or custom backbones: resnetv1_own, resnetv2_own")
     parser.add_argument('--rn_layers', type=int, default=5, help="Controls the depth of the own resnet network")
 
     # Head
