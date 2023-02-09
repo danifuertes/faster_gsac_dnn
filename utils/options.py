@@ -31,8 +31,7 @@ def set_seed(seed):
 
 
 def get_options(args=None):
-    parser = argparse.ArgumentParser(
-        description="InPercept: Vehicle detection with adverse weather conditions (night, rain, fog...)")
+    parser = argparse.ArgumentParser(description="Faster GSAC-DNN")
 
     # SEED
     parser.add_argument('--seed', type=int, default=1234, help='Seed for reproducibility. None to use random seed')
